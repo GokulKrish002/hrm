@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+}
+
+a:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 22, 22, 0.479);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg, #d0ddee, #e8eede);
+}
+
+
+.object-cover {
+    transition: all ease .7s;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.object-contain {
+    transition: all ease .7s;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo {
+    position: relative;
+    transition: ease-in-out .5s;
+    padding: 16px;
+    max-height: 80px;
+    width: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 28px;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+aside .side_container {
+    transition: all ease 1s;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(131deg, #dae4f2, #e6ebe4);
+    box-shadow: 0 0 20px 0 #00000042;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+main {
+    overflow: hidden;
+    height: 100vh;
+    width: -webkit-fill-available;
+}
+
+main .main_content {
+    width: -webkit-fill-available;
+}
+
+.side_content {
+    width: 100%;
+}
+
+.side_bar_links_container ul {
+    width: 100%;
+}
+
+.side_bar_links_container ul a {
+    transition: all ease 1s;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.side_bar_links_container .fa-solid {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e4a53;
+}
+
+.side_bar_links_container .icons {
+    margin-right: 14px;
+}
+
+.text_discription{
+    transition: all ease 1s;
+    font-size: 16px;
+}
+
+.side_container.minimized .text_discription {
+    font-size: 0px;
+}
+
+.minimized .side_bar_links_container ul a{
+    justify-content: center;
+}
+
+aside .side_container.minimized {
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo .small_logo{
+    opacity: 0;
+}
+
+.minimized .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px;
+}
+.minimized .big_logo {
+    opacity: 0;
+    height: 0px;
+}
+
+.minimized .small_logo {
+    opacity: 1;
+    position: relative;
+    top: -15px;
+}
+
+.minimized .side_bar_links_container{
+    transition: all ease 0.5s;
+    border: 1px solid #00000047;
+    border-radius: 60px;
+    width: 70%;
+    margin-left: 8px;
+    background: #1d1d10f0;
+}
+
+.minimized .side_bar_links_container .fa-solid{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c3c3c3e6;
+    background: #8080802b;
+    border-radius: 50%;
+}
+
+.minimized.side_container {
+    transition: all ease 0.5s;
+    background: linear-gradient(131deg, #dae4f200, #e6ebe400);
+    box-shadow: 0 0 20px 0 #00000000;
+}
+
+.main_ribben {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #cbe3cb;
+    margin-bottom: 24px;
+    backdrop-filter: blur(1px);
+}
+
+.project_search {
+    display: none;
+    width: 20vw;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #ffffff75;
+    border: 2px solid #00000038;
+}
+
+.search-box {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box.active {
+    width: 350px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background: #dde7e5;
+    outline: none;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box input.active {
+    opacity: 1;
+}
+
+.search-box input::placeholder {
+    color: #a6a6a6;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: #edf2ee;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+    color: #0e5cab;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box .search-icon.active {
+    right: 5px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    font-size: 20px;
+    background: transparent;
+    color: #000000;
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .cancel-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box .cancel-icon.active {
+    right: -40px;
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .search-data {
+    text-align: center;
+    padding-top: 7px;
+    color: #000000;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.search-box .search-data.active {
+    display: none;
+}
+
+.search-box.active .cancel-icon {
+    color: black;
+}
+.user_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.notification_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #dddddd42;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0000000f;
+    color: #616e57;
+}
+
+.main_area{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.068);
+}
