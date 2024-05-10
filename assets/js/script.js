@@ -26,3 +26,5 @@ cancelBtn.onclick = () => {
     searchData.classList.toggle("active");
     searchInput.value = "";
 }
+
+document.querySelector(".sidebar_toggler").addEventListener("click",function () { document.querySelector(".side_container").classList.toggle("minimized")});
